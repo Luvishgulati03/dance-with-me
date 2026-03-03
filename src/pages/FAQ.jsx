@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const FAQItem = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,35 +28,19 @@ const FAQItem = ({ question, answer }) => {
 }
 
 const FAQ = () => {
-    const faqs = [
-        {
-            question: "What is 1 Million Dancers?",
-            answer: "We are a global community connecting dancers, artists, DJs, and organizers in one unified platform. Our app lets you learn, perform, host events, and participate in challenges."
-        },
-        {
-            question: "Are there different plans available?",
-            answer: "Yes, we offer three plans: Stage (for beginners), Spotlight (for intermediate dancers), and Star (for the ultimate experience). You can find more details on our Plans page."
-        },
-        {
-            question: "How do I become an Artist or DJ on the platform?",
-            answer: "You can sign up as a specific Persona. Artists can conduct live or recorded classes, while DJs can create and sell playlists. Select your persona during sign up or upgrade your account settings later."
-        },
-        {
-            question: "How do I contact support?",
-            answer: "If you have any issues or questions, you can reach out to us through our social media channels linked in the footer, or via the support section inside the app."
-        }
-    ];
+    const { t } = useLanguage();
+    const faqs = t('faq.items');
 
     return (
         <div className="bg-brand-darker min-h-screen py-24 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
                 <div className="text-center mb-16">
-                    <h1 className="text-5xl font-extrabold text-white mb-4">FAQ</h1>
-                    <p className="text-xl text-brand-textMuted">Frequently asked questions</p>
+                    <h1 className="text-5xl font-extrabold text-white mb-4">{t('faq.title')}</h1>
+                    <p className="text-xl text-brand-textMuted">{t('faq.subtitle')}</p>
                 </div>
 
                 <div className="bg-brand-dark rounded-3xl p-8 md:p-12 border border-white/5 shadow-2xl">
-                    {faqs.map((faq, index) => (
+                    {Array.isArray(faqs) && faqs.map((faq, index) => (
                         <FAQItem key={index} question={faq.question} answer={faq.answer} />
                     ))}
                 </div>

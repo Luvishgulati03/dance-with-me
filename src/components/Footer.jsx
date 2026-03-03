@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const Footer = () => {
+    const { t } = useLanguage();
+
     return (
         <footer className="bg-brand-darker border-t border-white/10 pt-16 pb-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,7 +13,7 @@ const Footer = () => {
                     {/* Brand & Newsletter */}
                     <div className="lg:col-span-2">
                         <h2 className="text-3xl font-extrabold text-white mb-4">
-                            Subscribe for unstoppable moves!
+                            {t('footer.subscribe')}
                         </h2>
                         <form className="mt-6 sm:flex max-w-md">
                             <label htmlFor="email-address" className="sr-only">Email address</label>
@@ -21,14 +24,14 @@ const Footer = () => {
                                 autoComplete="email"
                                 required
                                 className="w-full min-w-0 px-4 py-3 text-base text-brand-dark bg-white border border-transparent rounded-l-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-dark focus:ring-brand-purple"
-                                placeholder="Enter your email"
+                                placeholder={t('footer.emailPlaceholder')}
                             />
                             <div className="mt-3 sm:mt-0 sm:ml-0 sm:flex-shrink-0">
                                 <button
                                     type="submit"
                                     className="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-r-full text-white bg-brand-purple hover:bg-brand-purple/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-dark focus:ring-brand-purple transition-colors duration-200"
                                 >
-                                    Subscribe
+                                    {t('footer.subscribeCta')}
                                 </button>
                             </div>
                         </form>
@@ -37,20 +40,21 @@ const Footer = () => {
                     {/* Links */}
                     <div>
                         <h3 className="text-sm font-semibold text-brand-gold tracking-wider uppercase mb-4">
-                            Explore
+                            {t('footer.explore')}
                         </h3>
                         <ul className="space-y-4">
-                            <li><Link to="/plans" className="text-brand-textMuted hover:text-white transition-colors">Plans</Link></li>
-                            <li><Link to="/product" className="text-brand-textMuted hover:text-white transition-colors">Product</Link></li>
-                            <li><Link to="/personas" className="text-brand-textMuted hover:text-white transition-colors">Personas</Link></li>
-                            <li><Link to="/faq" className="text-brand-textMuted hover:text-white transition-colors">FAQ</Link></li>
+                            <li><Link to="/plans" className="text-brand-textMuted hover:text-white transition-colors">{t('nav.plans')}</Link></li>
+                            <li><Link to="/product" className="text-brand-textMuted hover:text-white transition-colors">{t('nav.product')}</Link></li>
+                            <li><Link to="/personas" className="text-brand-textMuted hover:text-white transition-colors">{t('nav.personas')}</Link></li>
+                            <li><Link to="/events" className="text-brand-textMuted hover:text-white transition-colors">{t('nav.events')}</Link></li>
+                            <li><Link to="/faq" className="text-brand-textMuted hover:text-white transition-colors">{t('nav.faq')}</Link></li>
                         </ul>
                     </div>
 
                     {/* Social & Legal */}
                     <div>
                         <h3 className="text-sm font-semibold text-brand-gold tracking-wider uppercase mb-4">
-                            Connect
+                            {t('footer.connect')}
                         </h3>
                         <div className="flex space-x-4 mb-6">
                             <a href="#" className="text-brand-textMuted hover:text-white transition-colors">
@@ -68,8 +72,8 @@ const Footer = () => {
                         </div>
 
                         <ul className="space-y-4">
-                            <li><Link to="#" className="text-xs text-brand-textMuted hover:text-white transition-colors">Terms and conditions</Link></li>
-                            <li><Link to="#" className="text-xs text-brand-textMuted hover:text-white transition-colors">Privacy policy</Link></li>
+                            <li><Link to="#" className="text-xs text-brand-textMuted hover:text-white transition-colors">{t('footer.terms')}</Link></li>
+                            <li><Link to="#" className="text-xs text-brand-textMuted hover:text-white transition-colors">{t('footer.privacy')}</Link></li>
                         </ul>
                     </div>
 
@@ -77,7 +81,7 @@ const Footer = () => {
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
                     <p className="text-xs text-brand-textMuted">
-                        &copy; 2025 One Million Dancers. All rights reserved.
+                        {t('footer.copyright')}
                     </p>
                 </div>
             </div>
