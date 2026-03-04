@@ -83,6 +83,9 @@ const Footer = () => {
                     <p className="text-xs text-brand-textMuted">
                         {t('footer.copyright')}
                     </p>
+                    <Link to="/admin" className="text-xs text-white/20 hover:text-white/50 transition-colors mt-2 md:mt-0">
+                        Admin
+                    </Link>
                 </div>
             </div>
         </footer>

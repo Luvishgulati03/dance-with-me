@@ -16,11 +16,22 @@ const FEATURE_KEYS = {
     'chat': 'chat',
 };
 
+const FEATURE_IMAGES = {
+    'oneOnOne': '/images/app-home.jpeg',
+    'oneToMany': '/images/app-home.jpeg',
+    'videoProgram': '/images/app-video-program.jpeg',
+    'musicPlaylist': '/images/app-playlist.jpeg',
+    'findConnection': '/images/app-connection.png',
+    'feed': '/images/app-feed.jpeg',
+    'chat': '/images/app-chat.jpeg',
+};
+
 const FeaturePage = () => {
     const { featureSlug } = useParams();
     const { t } = useLanguage();
     const featureKey = FEATURE_KEYS[featureSlug] || 'oneOnOne';
     const feature = t(`featurePages.${featureKey}`);
+    const featureImage = FEATURE_IMAGES[featureKey];
 
     const [heroRef, heroVisible] = useScrollAnimation();
     const [contentRef, contentVisible] = useScrollAnimation();
@@ -59,10 +70,16 @@ const FeaturePage = () => {
                             <div className="w-56 sm:w-64 animate-float">
                                 <div className="bg-gray-900 rounded-[3rem] p-3 shadow-2xl border border-white/10 animate-pulse-glow">
                                     <div className="bg-gray-900 w-28 h-6 rounded-full mx-auto -mt-1 mb-2 relative z-10" />
-                                    <div className="bg-gradient-to-b from-brand-gradientStart to-brand-dark rounded-[2.3rem] overflow-hidden aspect-[9/19] flex flex-col items-center justify-center border border-white/5">
-                                        <Smartphone className="h-8 w-8 text-white/30 mb-3" />
-                                        <p className="text-white/30 text-xs font-medium text-center px-4">{t('featurePages.appPreview')}</p>
-                                        <p className="text-white/20 text-[10px] mt-1 text-center px-4">{feature?.title}</p>
+                                    <div className="bg-gradient-to-b from-brand-gradientStart to-brand-dark rounded-[2.3rem] overflow-hidden aspect-[9/19] flex flex-col items-center justify-center border border-white/5 relative">
+                                        {featureImage ? (
+                                            <img src={featureImage} alt={feature?.title || featureKey} className="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" />
+                                        ) : (
+                                            <>
+                                                <Smartphone className="h-8 w-8 text-white/30 mb-3" />
+                                                <p className="text-white/30 text-xs font-medium text-center px-4">{t('featurePages.appPreview')}</p>
+                                                <p className="text-white/20 text-[10px] mt-1 text-center px-4">{feature?.title}</p>
+                                            </>
+                                        )}
                                     </div>
                                     <div className="w-28 h-1 bg-white/30 rounded-full mx-auto mt-3" />
                                 </div>

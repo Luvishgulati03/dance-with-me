@@ -22,7 +22,7 @@ const Plans = () => {
     ];
 
     return (
-        <div className="bg-brand-darker min-h-screen py-24 px-4 sm:px-6 lg:px-8">
+        <div className="bg-brand-darker py-24 pb-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h1 className="text-5xl font-extrabold text-white mb-4">{t('plans.title')}</h1>

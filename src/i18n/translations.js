@@ -127,7 +127,7 @@ const translations = {
             readyTitle: 'Ready to move?',
             downloadCta: 'Download the App Now',
             exploreFeatures: 'Explore Our Features',
-            exploreSubtitle: 'Discover everything that makes One Trillion Dancers the ultimate platform for the dance community.',
+            exploreSubtitle: 'Discover everything that makes Trillion Dancers the ultimate platform for the dance community.',
         },
 
         personas: {
@@ -146,7 +146,7 @@ const translations = {
             title: 'FAQ',
             subtitle: 'Frequently asked questions',
             items: [
-                { question: 'What is One Trillion Dancers?', answer: 'We are a global community connecting dancers, artists, DJs, and organizers in one unified platform.' },
+                { question: 'What is Trillion Dancers?', answer: 'We are a global community connecting dancers, artists, DJs, and organizers in one unified platform.' },
                 { question: 'Are there different plans available?', answer: 'Yes, we offer three plans: Stage, Spotlight, and Star. Visit our Plans page for details.' },
                 { question: 'How do I become an Artist or DJ?', answer: 'Sign up as a specific Persona. Artists conduct classes, DJs create playlists. Select your persona during sign up.' },
                 { question: 'How do I contact support?', answer: 'Reach out through our social media channels or the support section inside the app.' },
@@ -161,7 +161,7 @@ const translations = {
             connect: 'Connect',
             terms: 'Terms and conditions',
             privacy: 'Privacy policy',
-            copyright: '© 2025 One Trillion Dancers. All rights reserved.',
+            copyright: '© 2025 Trillion Dancers. All rights reserved.',
         },
 
         eventsPage: {
@@ -211,7 +211,7 @@ const translations = {
 
         // Feature Pages
         featurePages: {
-            backToProduct: '← Back to Product',
+            backToProduct: 'Back to Product',
             appPreview: 'App Preview',
             comingSoon: 'Detailed content coming soon. This feature page will be populated with screenshots, descriptions, and use cases.',
             oneOnOne: { title: '1:1 Class', subtitle: 'Personal, one-on-one dance classes with your favourite instructor.', desc: 'Book private sessions with professional dance instructors. Get personalized feedback, learn at your own pace, and master techniques with dedicated attention.' },
@@ -333,7 +333,7 @@ const translations = {
             readyTitle: 'Prêt à bouger ?',
             downloadCta: 'Télécharger l\'application',
             exploreFeatures: 'Découvrez nos fonctionnalités',
-            exploreSubtitle: 'Découvrez tout ce qui fait de One Trillion Dancers la plateforme ultime pour la communauté de danse.',
+            exploreSubtitle: 'Découvrez tout ce qui fait de Trillion Dancers la plateforme ultime pour la communauté de danse.',
         },
 
         personas: {
@@ -352,7 +352,7 @@ const translations = {
             title: 'FAQ',
             subtitle: 'Questions fréquemment posées',
             items: [
-                { question: 'Qu\'est-ce que One Trillion Dancers ?', answer: 'Une communauté mondiale connectant danseurs, artistes, DJs et organisateurs.' },
+                { question: 'Qu\'est-ce que Trillion Dancers ?', answer: 'Une communauté mondiale connectant danseurs, artistes, DJs et organisateurs.' },
                 { question: 'Y a-t-il différents abonnements ?', answer: 'Oui : Stage, Spotlight et Star. Voir la page Abonnements.' },
                 { question: 'Comment devenir Artiste ou DJ ?', answer: 'Inscrivez-vous en tant que Persona. Sélectionnez votre rôle lors de l\'inscription.' },
                 { question: 'Comment contacter le support ?', answer: 'Via nos réseaux sociaux ou la section support de l\'application.' },
@@ -367,7 +367,7 @@ const translations = {
             connect: 'Connecter',
             terms: 'Conditions générales',
             privacy: 'Politique de confidentialité',
-            copyright: '© 2025 One Trillion Dancers. Tous droits réservés.',
+            copyright: '© 2025 Trillion Dancers. Tous droits réservés.',
         },
 
         eventsPage: {
@@ -416,7 +416,7 @@ const translations = {
         },
 
         featurePages: {
-            backToProduct: '← Retour au produit',
+            backToProduct: 'Retour au produit',
             appPreview: 'Aperçu de l\'app',
             comingSoon: 'Contenu détaillé à venir. Cette page sera enrichie avec des captures d\'écran, des descriptions et des cas d\'utilisation.',
             oneOnOne: { title: 'Cours 1:1', subtitle: 'Cours de danse personnels avec votre instructeur préféré.', desc: 'Réservez des sessions privées avec des instructeurs professionnels. Obtenez des retours personnalisés.' },

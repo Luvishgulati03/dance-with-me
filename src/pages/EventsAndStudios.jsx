@@ -43,7 +43,7 @@ const EventsAndStudios = () => {
         }
     }, [location]);
 
-    const filterKeys = ['all', 'workshop', 'competition', 'social', 'performance', 'festival'];
+    const filterKeys = ['all', 'competition', 'social', 'performance', 'festival'];
 
     const allFiltered = Array.isArray(events)
         ? events.filter((e) => activeFilter === 'all' || e.category?.toLowerCase() === activeFilter)
@@ -55,7 +55,7 @@ const EventsAndStudios = () => {
     const getCategoryColor = (category) => {
         const colors = {
             festival: 'bg-amber-500/20 text-amber-400 border-amber-500/30',
-            workshop: 'bg-green-500/20 text-green-400 border-green-500/30',
+
             social: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
             competition: 'bg-red-500/20 text-red-400 border-red-500/30',
             performance: 'bg-purple-500/20 text-purple-400 border-purple-500/30',

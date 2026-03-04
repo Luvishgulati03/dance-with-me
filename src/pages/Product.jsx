@@ -10,16 +10,16 @@ const DANCE_VIDEOS = [
 ];
 
 const FEATURES = [
-    { key: 'oneOnOne', slug: 'one-on-one', icon: <Smartphone className="h-6 w-6" />, image: '/images/app-classes.png' },
-    { key: 'oneToMany', slug: 'one-to-many', icon: <Users className="h-6 w-6" />, image: '/images/app-classes.png' },
-    { key: 'videoProgram', slug: 'video-program', icon: <Video className="h-6 w-6" />, video: 2 },
-    { key: 'musicPlaylist', slug: 'music-playlist', icon: <Music className="h-6 w-6" />, image: '/images/app-playlist.png' },
+    { key: 'oneOnOne', slug: 'one-on-one', icon: <Smartphone className="h-6 w-6" />, image: '/images/app-home.jpeg' },
+    { key: 'oneToMany', slug: 'one-to-many', icon: <Users className="h-6 w-6" />, image: '/images/app-home.jpeg' },
+    { key: 'videoProgram', slug: 'video-program', icon: <Video className="h-6 w-6" />, image: '/images/app-video-program.jpeg' },
+    { key: 'musicPlaylist', slug: 'music-playlist', icon: <Music className="h-6 w-6" />, image: '/images/app-playlist.jpeg' },
     { key: 'findConnection', slug: 'find-connection', icon: <Heart className="h-6 w-6" />, image: '/images/app-connection.png' },
     { key: 'badges', slug: 'badges', icon: <Trophy className="h-6 w-6" />, video: 1 },
     { key: 'referral', slug: 'referral', icon: <Share2 className="h-6 w-6" />, video: 0 },
     { key: 'challenges', slug: 'challenges', icon: <Flame className="h-6 w-6" />, video: 2 },
-    { key: 'feed', slug: 'feed', icon: <Tv className="h-6 w-6" />, image: '/images/app-feed.png' },
-    { key: 'chat', slug: 'chat', icon: <MessageCircle className="h-6 w-6" />, image: '/images/app-chat.png' },
+    { key: 'feed', slug: 'feed', icon: <Tv className="h-6 w-6" />, image: '/images/app-feed.jpeg' },
+    { key: 'chat', slug: 'chat', icon: <MessageCircle className="h-6 w-6" />, image: '/images/app-chat.jpeg' },
 ];
 
 const Product = () => {

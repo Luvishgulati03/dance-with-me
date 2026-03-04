@@ -66,12 +66,17 @@ const PhoneCarousel = ({ items, className = '' }) => {
                                 <div className="bg-gray-900 rounded-[2.5rem] p-2.5 shadow-2xl border border-white/10">
                                     <div className="bg-gray-900 w-24 h-5 rounded-full mx-auto -mt-0.5 mb-1.5 relative z-10" />
                                     <div className="bg-gradient-to-b from-brand-gradientStart to-brand-dark rounded-[2rem] overflow-hidden aspect-[9/19] flex flex-col items-center justify-center border border-white/5 relative">
-                                        {/* Placeholder screen */}
-                                        <Smartphone className="h-6 w-6 text-white/20 mb-2" />
-                                        <p className="text-white/30 text-[10px] font-medium text-center px-3 leading-tight">
-                                            {item.label}
-                                        </p>
-                                        <p className="text-white/15 text-[8px] mt-1">Upload screenshot</p>
+                                        {item.image ? (
+                                            <img src={item.image} alt={item.label} className="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" />
+                                        ) : (
+                                            <>
+                                                <Smartphone className="h-6 w-6 text-white/20 mb-2" />
+                                                <p className="text-white/30 text-[10px] font-medium text-center px-3 leading-tight">
+                                                    {item.label}
+                                                </p>
+                                                <p className="text-white/15 text-[8px] mt-1">Upload screenshot</p>
+                                            </>
+                                        )}
                                     </div>
                                     <div className="w-20 h-0.5 bg-white/30 rounded-full mx-auto mt-2" />
                                 </div>

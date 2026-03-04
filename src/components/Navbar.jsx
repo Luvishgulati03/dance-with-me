@@ -3,6 +3,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import LanguageSelector from './LanguageSelector';
+import logo from '../assets/logo.jpeg';
 
 const FEATURE_ROUTES = [
     { key: 'oneOnOne', path: '/features/one-on-one' },
@@ -67,7 +68,7 @@ const Navbar = () => {
                     <div className="flex-shrink-0 min-w-0">
                         <Link to="/" className="flex items-center gap-2">
                             <span className="text-brand-gold text-base lg:text-xl font-bold uppercase tracking-wider whitespace-nowrap">
-                                One Trillion Dancers
+                                Trillion Dancers
                             </span>
                         </Link>
                     </div>
