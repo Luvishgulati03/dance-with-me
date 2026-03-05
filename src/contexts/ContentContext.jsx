@@ -50,7 +50,7 @@ export const ContentProvider = ({ children }) => {
             c => c.page === page && c.section === section && c.content_key === key
         );
         if (!item) return null;
-        return lang === 'fr' ? item.value_fr : item.value_en;
+        return lang === 'fr' ? item.value_fr : lang === 'es' ? (item.value_es || item.value_en) : item.value_en;
     }, [siteContent]);
 
     // Get media URL by context

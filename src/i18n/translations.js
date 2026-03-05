@@ -115,7 +115,7 @@ const translations = {
             favoriteFeatures: 'Favorite Features',
             mostPopular: 'Most Popular',
             items: [
-                { name: 'Stage', price: '0,99€', perfectFor: 'Beginners, curious movers, and anyone who wants to start dancing for fun', availableOn: 'iPhone · Android', features: 'Introductory · Accessible · Essential' },
+                { name: 'Stage', price: 'Free', perfectFor: 'Beginners, curious movers, and anyone who wants to start dancing for fun', availableOn: 'iPhone · Android', features: 'Introductory · Accessible · Essential' },
                 { name: 'Spotlight', price: '14,99€', perfectFor: 'Dancers who want to go beyond the basics, experiment with different styles in more depth', availableOn: 'iPhone · Android', features: 'Enhanced · Challenging · Progress' },
                 { name: 'Star', price: '24,99€', perfectFor: 'Those who want the complete dance experience and the freedom to practice without limits', availableOn: 'iPhone · Android', features: 'Unlimited · Exclusive · Advanced · Personalized' },
             ],
@@ -133,7 +133,7 @@ const translations = {
         personas: {
             title: 'Personas',
             subtitle: 'Who are you in the dance community?',
-            joinCta: 'Join as an artist',
+            joinCta: 'Join our Community',
             items: [
                 { num: '1', title: 'Dancer', desc: 'Learn, perform and participate in challenges.' },
                 { num: '2', title: 'Artist', desc: 'Conduct live or recorded classes.' },
@@ -321,7 +321,7 @@ const translations = {
             favoriteFeatures: 'Fonctionnalités favorites',
             mostPopular: 'Plus populaire',
             items: [
-                { name: 'Stage', price: '0,99€', perfectFor: 'Débutants et curieux du mouvement', availableOn: 'iPhone · Android', features: 'Introductif · Accessible · Essentiel' },
+                { name: 'Stage', price: 'Gratuit', perfectFor: 'Débutants et curieux du mouvement', availableOn: 'iPhone · Android', features: 'Introductif · Accessible · Essentiel' },
                 { name: 'Spotlight', price: '14,99€', perfectFor: 'Danseurs qui veulent aller au-delà des bases', availableOn: 'iPhone · Android', features: 'Amélioré · Stimulant · Progression' },
                 { name: 'Star', price: '24,99€', perfectFor: 'L\'expérience de danse complète sans limites', availableOn: 'iPhone · Android', features: 'Illimité · Exclusif · Avancé · Personnalisé' },
             ],
@@ -339,7 +339,7 @@ const translations = {
         personas: {
             title: 'Personas',
             subtitle: 'Qui êtes-vous dans la communauté ?',
-            joinCta: 'Rejoindre en tant qu\'artiste',
+            joinCta: 'Rejoindre notre communauté',
             items: [
                 { num: '1', title: 'Danseur', desc: 'Apprenez, performez et participez à des défis.' },
                 { num: '2', title: 'Artiste', desc: 'Donnez des cours en direct ou enregistrés.' },
@@ -433,6 +433,163 @@ const translations = {
                 subtitle: 'Restez connecté avec la communauté.',
                 personal: { title: 'Chat personnel', desc: 'Discutez en privé avec d\'autres membres de la communauté.' },
                 group: { title: 'Chat de groupe', desc: 'Rejoignez des conversations de groupe pour la planification et la coordination.' },
+            },
+        },
+    },
+
+    es: {
+        nav: {
+            home: 'Inicio',
+            plans: 'Planes',
+            product: 'Producto',
+            personas: 'Personas',
+            faq: 'Preguntas',
+            events: 'Eventos y Estudios',
+            productFeatures: 'Características del producto',
+        },
+
+        home: {
+            hero: {
+                title: 'El latido de la comunidad de danza',
+                cta: 'Explorar la app',
+            },
+            app: {
+                heading: 'Nuestra innovación para conectar la comunidad de danza en todas las formas posibles',
+                description: 'Descubre una comunidad de bailarines, explora nuevas rutinas y eleva tu pasión por el movimiento. Nuestra app lo reúne todo — clases, eventos, playlists y una comunidad que se mueve contigo.',
+                cta: 'Explorar la app',
+                phonePlaceholder: 'Tu app de danza',
+                appLink: 'https://loadly.io/1dapWESq',
+            },
+            events: {
+                heading: 'Eventos próximos',
+                subheading: 'Descubre los eventos de danza más populares cerca de ti.',
+                viewAll: 'Ver todos los eventos',
+                learnMore: 'Saber más',
+            },
+            studios: {
+                heading: 'Estudios destacados',
+                subheading: 'Encuentra los mejores estudios de danza de tu zona.',
+                viewAll: 'Ver todos los estudios',
+                styles: 'Estilos',
+            },
+            whyUs: {
+                heading: '¿Por qué nosotros?',
+                subheading: 'Creado para bailarines, por bailarines.',
+                safe: 'Seguro y protegido',
+                safeDesc: 'Tu información personal se mantiene segura en todo momento.',
+                community: 'Impulsado por la comunidad',
+                communityDesc: 'Conéctate con bailarines de todo el mundo.',
+                allInOne: 'Todo en uno',
+                allInOneDesc: 'Clases, eventos, playlists y más en un solo lugar.',
+                passion: 'Impulsado por la pasión',
+                passionDesc: 'Creado con amor por la danza y el movimiento.',
+            },
+            plans: {
+                heading: 'Elige tu plan',
+                subheading: 'Planes flexibles para cada bailarín.',
+                viewAll: 'Ver todos los planes',
+                selectPlan: 'Seleccionar plan',
+                perMonth: '/mes',
+            },
+        },
+
+        product: {
+            title: 'Explora la aplicación',
+            subtitle: 'Todo lo que necesitas para bailar, conectar y crecer — en una sola plataforma.',
+            readyTitle: '¿Listo para moverte?',
+            downloadCta: 'Descargar la aplicación',
+            exploreFeatures: 'Descubre nuestras funciones',
+            exploreSubtitle: 'Descubre todo lo que hace de Trillion Dancers la plataforma definitiva para la comunidad de danza.',
+        },
+
+        personas: {
+            title: 'Personas',
+            subtitle: '¿Quién eres en la comunidad de danza?',
+            joinCta: 'Únete a nuestra comunidad',
+            items: [
+                { num: '1', title: 'Bailarín', desc: 'Aprende, actúa y participa en desafíos.' },
+                { num: '2', title: 'Artista', desc: 'Imparte clases en vivo o grabadas.' },
+                { num: '3', title: 'DJ', desc: 'Crea y vende playlists para mejorar las actuaciones.' },
+                { num: '4', title: 'Organizador', desc: 'Organiza y promueve eventos de danza.' },
+            ],
+        },
+
+        faq: {
+            title: 'Preguntas Frecuentes',
+            subtitle: 'Preguntas frecuentes',
+            items: [
+                { question: '¿Qué es Trillion Dancers?', answer: 'Somos una comunidad global que conecta bailarines, artistas, DJs y organizadores en una plataforma unificada.' },
+                { question: '¿Hay diferentes planes disponibles?', answer: 'Sí, ofrecemos tres planes: Stage, Spotlight y Star. Visita nuestra página de Planes para más detalles.' },
+                { question: '¿Cómo me convierto en Artista o DJ?', answer: 'Regístrate con una Persona específica. Los Artistas dan clases, los DJs crean playlists. Selecciona tu persona al registrarte.' },
+                { question: '¿Cómo contacto al soporte?', answer: 'Contáctanos a través de nuestras redes sociales o la sección de soporte dentro de la app.' },
+            ],
+        },
+
+        footer: {
+            subscribe: '¡Suscríbete para movimientos imparables!',
+            emailPlaceholder: 'Ingresa tu email',
+            subscribeCta: 'Suscribirse',
+            explore: 'Explorar',
+            connect: 'Conectar',
+            terms: 'Términos y condiciones',
+            privacy: 'Política de privacidad',
+            copyright: '© 2025 Trillion Dancers. Todos los derechos reservados.',
+        },
+
+        eventsPage: {
+            hero: {
+                tag: 'EVENTOS Y ESTUDIOS',
+                title: 'Eventos y Estudios de Danza para Nuestra Comunidad',
+                subtitle: 'Talleres, competencias, noches sociales y sesiones de estudio diseñadas para bailarines de todos los estilos y niveles.',
+                browseCta: 'Explorar eventos',
+                studiosCta: 'Ver estudios',
+            },
+            filters: { all: 'Todos', competition: 'Competencia', social: 'Social', performance: 'Espectáculo', festival: 'Festival' },
+            eventTypes: { organiser: 'Organizador', trilliondancers: 'Trillion Dancers' },
+            viewDetails: 'Ver detalles',
+            location: 'Ubicación',
+            tags: 'Etiquetas',
+            attendees: 'Asistentes',
+            featured: 'Destacado',
+            studioSection: { title: 'Estudios asociados', subtitle: 'Descubre estudios de danza cerca de ti.' },
+            events: [],
+            studios: [],
+        },
+
+        plans: {
+            title: 'Elige tu plan',
+            subtitle: 'Planes flexibles para cada bailarín.',
+            perMonth: '/mes',
+            selectPrefix: 'Seleccionar',
+            perfectFor: 'Perfecto para',
+            availableOn: 'Disponible en',
+            favoriteFeatures: 'Nuestras funciones favoritas',
+            mostPopular: 'Más popular',
+            items: [
+                { name: 'Stage', price: 'Gratis', perfectFor: 'Principiantes, curiosos del movimiento y cualquiera que quiera empezar a bailar por diversión', availableOn: 'iPhone · Android', features: 'Introductorio · Accesible · Esencial' },
+                { name: 'Spotlight', price: '14,99€', perfectFor: 'Bailarines que quieren ir más allá de lo básico, experimentar con diferentes estilos en mayor profundidad', availableOn: 'iPhone · Android', features: 'Mejorado · Desafiante · Progreso' },
+                { name: 'Star', price: '24,99€', perfectFor: 'Quienes quieren la experiencia de danza completa y la libertad de practicar sin límites', availableOn: 'iPhone · Android', features: 'Ilimitado · Exclusivo · Avanzado · Personalizado' },
+            ],
+        },
+
+        featurePages: {
+            backToProduct: 'Volver al Producto',
+            appPreview: 'Vista previa de la app',
+            comingSoon: 'Contenido detallado próximamente. Esta página se llenará de capturas, descripciones y casos de uso.',
+            oneOnOne: { title: 'Clase 1:1', subtitle: 'Clases de danza personales con tu instructor favorito.', desc: 'Reserva sesiones privadas con instructores profesionales. Obtén retroalimentación personalizada.' },
+            oneToMany: { title: 'Clase 1:Muchos', subtitle: 'Clases de baile en grupo con varios instructores.', desc: 'Únete a clases grupales dirigidas por profesionales.' },
+            videoProgram: { title: 'Programa de Video', subtitle: 'Programas de danza a tu ritmo.', desc: 'Accede a una biblioteca de lecciones de danza grabadas.' },
+            musicPlaylist: { title: 'Playlist Musical', subtitle: 'Playlists curadas para cada estilo de danza.', desc: 'Descubre playlists creadas por DJs y bailarines de la comunidad.' },
+            findConnection: { title: 'Encuentra tu Conexión', subtitle: 'Conéctate con bailarines que comparten tu pasión.', desc: 'Descubre bailarines, artistas y organizadores que comparten tus intereses.' },
+            badges: { title: 'Insignias y Niveles', subtitle: 'Gana insignias por tu participación.', desc: 'Obtén reconocimiento por clases completadas, eventos y desafíos.' },
+            referral: { title: 'Referidos', subtitle: 'Invita amigos y gana recompensas.', desc: 'Comparte tu código de referido y obtén beneficios.' },
+            challenges: { title: 'Desafíos', subtitle: 'Compite en emocionantes desafíos de danza.', desc: 'Participa en desafíos semanales y mensuales de danza.' },
+            feed: { title: 'Feed', subtitle: 'Una experiencia tipo Instagram Reels para la danza.', desc: 'Navega por un feed personalizado de videos de danza.' },
+            chat: {
+                title: 'Chat Comunitario',
+                subtitle: 'Mantente conectado con la comunidad.',
+                personal: { title: 'Chat Personal', desc: 'Chatea en privado con otros miembros de la comunidad.' },
+                group: { title: 'Chat Grupal', desc: 'Únete a conversaciones grupales para planificación y coordinación.' },
             },
         },
     },

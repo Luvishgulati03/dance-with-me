@@ -22,6 +22,7 @@ const LanguageSelector = () => {
             >
                 <option value="en" className="bg-brand-dark text-white">English</option>
                 <option value="fr" className="bg-brand-dark text-white">Français</option>
+                <option value="es" className="bg-brand-dark text-white">Español</option>
             </select>
         </div>
     );

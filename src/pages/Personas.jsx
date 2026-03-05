@@ -56,7 +56,7 @@ const Personas = () => {
     const personaItems = t('personas.items');
 
     return (
-        <div className="bg-brand-dark min-h-screen">
+        <div className="bg-brand-dark">
             {/* HERO */}
             <section ref={heroRef} className="relative pt-8 sm:pt-12 pb-16 px-4 overflow-hidden">
                 <div className="absolute top-10 right-10 w-72 h-72 bg-brand-purple/10 rounded-full blur-[120px] pointer-events-none" />

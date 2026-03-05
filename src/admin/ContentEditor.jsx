@@ -39,7 +39,7 @@ const ContentEditor = () => {
         setSaving(true);
         const items = content.filter(c => c.page === activePage).map(c => ({
             page: c.page, section: c.section, content_key: c.content_key,
-            value_en: c.value_en, value_fr: c.value_fr,
+            value_en: c.value_en, value_fr: c.value_fr, value_es: c.value_es || '',
         }));
         await fetch('/api/content/bulk', {
             method: 'PUT',
@@ -77,7 +77,7 @@ const ContentEditor = () => {
                         <h3 className="text-brand-gold text-sm font-bold uppercase tracking-wider mb-4">{section}</h3>
                         <div className="space-y-4">
                             {items.map(item => (
-                                <div key={item.id} className="grid md:grid-cols-2 gap-4">
+                                <div key={item.id} className="grid md:grid-cols-3 gap-4">
                                     <div>
                                         <label className="block text-xs text-brand-textMuted mb-1">{item.content_key} (English)</label>
                                         <textarea
@@ -93,6 +93,15 @@ const ContentEditor = () => {
                                             value={item.value_fr}
                                             onChange={(e) => updateLocal(item.id, 'value_fr', e.target.value)}
                                             rows={item.value_fr.length > 100 ? 3 : 1}
+                                            className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-2 text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-purple resize-y"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-xs text-brand-textMuted mb-1">{item.content_key} (Spanish)</label>
+                                        <textarea
+                                            value={item.value_es || ''}
+                                            onChange={(e) => updateLocal(item.id, 'value_es', e.target.value)}
+                                            rows={(item.value_es || '').length > 100 ? 3 : 1}
                                             className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-2 text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-purple resize-y"
                                         />
                                     </div>

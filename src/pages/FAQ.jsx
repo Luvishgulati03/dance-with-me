@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
+import { useContent } from '../contexts/ContentContext';
 
 const FAQItem = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +14,9 @@ const FAQItem = ({ question, answer }) => {
             >
                 <span className="text-lg font-semibold text-white">{question}</span>
                 {isOpen ? (
-                    <ChevronUp className="h-6 w-6 text-brand-gold" />
+                    <ChevronUp className="h-6 w-6 text-brand-gold flex-shrink-0" />
                 ) : (
-                    <ChevronDown className="h-6 w-6 text-brand-gold" />
+                    <ChevronDown className="h-6 w-6 text-brand-gold flex-shrink-0" />
                 )}
             </button>
             <div
@@ -28,8 +29,20 @@ const FAQItem = ({ question, answer }) => {
 }
 
 const FAQ = () => {
-    const { t } = useLanguage();
-    const faqs = t('faq.items');
+    const { t, language } = useLanguage();
+    const { faqs: apiFaqs } = useContent();
+
+    // Use API FAQs if available, fallback to static translations
+    const faqItems = apiFaqs && apiFaqs.length > 0
+        ? apiFaqs.map(f => ({
+            question: language === 'fr' ? f.question_fr
+                : language === 'es' ? (f.question_es || f.question_en)
+                    : f.question_en,
+            answer: language === 'fr' ? f.answer_fr
+                : language === 'es' ? (f.answer_es || f.answer_en)
+                    : f.answer_en,
+        }))
+        : t('faq.items');
 
     return (
         <div className="bg-brand-darker min-h-screen py-24 px-4 sm:px-6 lg:px-8">
@@ -40,7 +53,7 @@ const FAQ = () => {
                 </div>
 
                 <div className="bg-brand-dark rounded-3xl p-8 md:p-12 border border-white/5 shadow-2xl">
-                    {Array.isArray(faqs) && faqs.map((faq, index) => (
+                    {Array.isArray(faqItems) && faqItems.map((faq, index) => (
                         <FAQItem key={index} question={faq.question} answer={faq.answer} />
                     ))}
                 </div>

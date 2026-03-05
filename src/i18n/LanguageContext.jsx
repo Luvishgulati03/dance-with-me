@@ -114,8 +114,11 @@ export const LanguageProvider = ({ children }) => {
                 c => c.page === page && c.section === section && c.content_key === contentKey
             );
             if (item) {
-                const val = language === 'fr' ? item.value_fr : item.value_en;
-                if (val) return val;
+                let val;
+                if (language === 'fr') val = item.value_fr;
+                else if (language === 'es') val = item.value_es;
+                else val = item.value_en;
+                if (val && val.trim()) return val;
             }
         }
 

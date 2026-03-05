@@ -46,7 +46,9 @@ const Plans = () => {
                             <h2 className="text-3xl font-bold text-white mb-2">{plan.name}</h2>
                             <div className="text-4xl font-extrabold text-white mb-8">
                                 {plan.price}
-                                <span className="text-lg font-normal text-brand-textMuted">{t('plans.perMonth')}</span>
+                                {!['free', 'gratuit', 'gratis'].includes(plan.price?.toLowerCase()) && (
+                                    <span className="text-lg font-normal text-brand-textMuted">{t('plans.perMonth')}</span>
+                                )}
                             </div>
 
                             <div className="flex-grow space-y-6">

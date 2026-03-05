@@ -23,5 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-server/database.sqlite
+# Database (Tracked as requested)
+server/database.sqlite-shm
+server/database.sqlite-wal
 server/uploads/
